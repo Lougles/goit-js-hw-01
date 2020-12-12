@@ -1,4 +1,4 @@
-const ADMIN_PASSWORD = 'q';
+const ADMIN_PASSWORD = 'jqueryismyjam';
 let message;
 
 let input = prompt('Введите пароль');
