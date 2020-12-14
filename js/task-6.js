@@ -1,10 +1,10 @@
 let input;
 let total = 0;
 
-do {
+while(true) {
   input = prompt('Input a number');
   
-  if (input === null) {
+  if (!input) {
     break;
   }
   input = Number(input);
@@ -14,8 +14,5 @@ do {
     continue;
   }
   total += input;
-
-} while (true);
-
-
+}
 alert(`Общая сумма чисел равна: ${total}`);

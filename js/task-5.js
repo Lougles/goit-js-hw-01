@@ -1,7 +1,7 @@
 let input = prompt("Input your country");
 let country;
-if (input === null) {
-  alert(`Отменено пользователем`)
+if (!input) {
+  alert(`Отменено пользователем`);
 }
 else {
   country = input.toLowerCase();
@@ -30,10 +30,12 @@ switch(country) {
     break;
   }
 default:
-  {
-    alert("В вашей стране доставка не доступна, или вы отменили доставку");
-  }
+    {
+    }
 }
 if (credits > 0) {
   alert(`Доставка в ${country} будет стоить ${credits} кредитов`);
+}
+else {
+  console.log(`Введите корректную информацию`);
 }
